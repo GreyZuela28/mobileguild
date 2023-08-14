@@ -35,20 +35,20 @@ class NotificationScreen extends StatefulWidget {
 
 class _NotificationScreenState extends State<NotificationScreen> {
   
-  bool _isVisible = false;
-  bool _isMeetingVisible = false;
+  bool _showApplicantDetails = false;
+  bool _showMeetingButton = false;
 
   @override
   initState() {
     super.initState();
        if(widget.notificationId != '' && widget.jobId != ""){
         setState(() {
-          _isVisible = true;
+          _showApplicantDetails = true;
         });
        }
        if(widget.jobId != "" && widget.notificationId == ""){
         setState(() {
-          _isMeetingVisible = true;
+          _showMeetingButton = true;
         });
        }
   }
@@ -96,7 +96,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
             
             const SizedBox(height: 10),
             Visibility(
-              visible: _isVisible,
+              visible: _showApplicantDetails,
               child: 
                 ElevatedButton.icon(
                   onPressed: () {
@@ -139,7 +139,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                   label: const Text("More Details"))
             ),
             Visibility(
-              visible: _isMeetingVisible,
+              visible: _showMeetingButton,
               child: 
                 ElevatedButton.icon(
                   onPressed: () {

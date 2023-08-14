@@ -157,7 +157,7 @@ class _ApplicantScreenState extends State<ApplicantScreen> {
                                             .doc(widget.jobId)
                                             .get();
                                     // ignore: unnecessary_null_comparison
-
+                                    //insert to applicant notication
                                     FirebaseFirestore.instance
                                         .collection("users")
                                         .doc(widget.userId)

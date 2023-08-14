@@ -413,14 +413,14 @@ class _SendApplicationScreenState extends State<SendApplicationScreen> {
                                           "token": document["token"],
                                           "jobId": widget.jobId
                                         });
-
+                                        //upload resume on send application
                                         FirebaseFirestore.instance
                                             .collection("users")
                                             .doc(FirebaseAuth
                                                 .instance.currentUser!.uid)
                                             .update({"resume": uploadFileURl});
                                         
-
+                                        //insert notification to firebase
                                         FirebaseFirestore.instance
                                             .collection("users")
                                             .doc(widget.userId)
