@@ -56,9 +56,6 @@ class _NotificationScreenState extends State<NotificationScreen> {
 
   @override
   Widget build(BuildContext context) {
-      print(widget.jobId);
-      print(widget.name);
-      print(widget.email);
 
     return Scaffold(
       
