@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "575930815236",
+    "project_id": "capstone-v3",
+    "storage_bucket": "capstone-v3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575930815236:android:2abd9122009b3da7d33651",
+        "android_client_info": {
+          "package_name": "com.example.mobile_guild_for_jobseekers_v3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575930815236-h6i8bmth711suniia0tl1gm2v15c69g3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA25nlsjmD3FtJhB6NEL8v0-8tZsyTrML4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575930815236-h6i8bmth711suniia0tl1gm2v15c69g3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
